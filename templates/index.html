@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中信猪光宝气-免费200笔刷</title>
+</head>
+<body>
+<h2>中信猪活动</h2>
+<a href="{{url_for('anhelp')}}">安卓抓包教程</a><br>
+<a href="{{url_for('iphelp')}}">IPHONE抓包教程</a><br>
+{% if message !=None%}
+  <p style="color:red">{{ message }}</p>
+  {% endif %}
+<form action="/go" method="POST">
+    <textarea name="reqhead" rows="10" cols="60" placeholder="请输入请求头部"></textarea><br>
+    <textarea name="reqbody" rows="10" cols="60" placeholder="请输入请求主体"></textarea><br>
+    <button style="height: 50px;width: 100px">开刷</button>
+</form>
+
+</body>
+
+
+</html>
